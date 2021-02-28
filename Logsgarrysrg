@@ -1,0 +1,36 @@
+xAdmin.Config = xAdmin.Config or {}
+
+-- If you are using MySQL, please ensure you have the MySQLOO module installed!
+xAdmin.Config.UseMySQL = false
+
+xAdmin.Config.DBINFO = xAdmin.Config.DBINFO or {} -- Do not touch this
+
+-- The host for your MySQL database ie. 127.0.0.1
+xAdmin.Config.DBINFO.host = "127.0.0.1"
+-- The username for your database - ensure this has permissions for the DB you are accessing
+xAdmin.Config.DBINFO.username = "username"
+-- The password for the above user
+xAdmin.Config.DBINFO.pass = "password"
+-- The database to use (ensure your user has access to this)
+xAdmin.Config.DBINFO.db = "database"
+-- The database port
+xAdmin.Config.DBINFO.port = 3306
+
+-- Setting this to true will print all failed MySQL / SQLite queries to console
+xAdmin.Config.EnableDebug = false
+
+xAdmin.Config.TableNamePrefix = "xadmin_"
+
+-- Steam API key used for family sharing checks - Create one here: https://steamcommunity.com/dev/apikey
+xAdmin.Config.SteamAPIKey = ""
+
+-- Whether or not to use Discord relay (requires RelayURL, DiscordWebhook and RelayKey to be assigned)
+xAdmin.Config.DoDiscordRelay = false
+-- URL for Discord relay
+-- Change this if you have uploaded 'discordrelay.php' to your own website with the relevant URL. If not, you can leave this as the default URL.
+xAdmin.Config.RelayURL = ""
+-- This is the private key for the Discord relay - You don't need to change this unless you use the proxy on your own webserver
+-- If using the proxy on your own webserver, find your key in the discordrelay.php file
+xAdmin.Config.RelayKey = ""
+-- Webhook for Discord channel to relay logs to
+xAdmin.Config.DiscordWebhook = "https://canary.discord.com/api/webhooks/814290962699780126/tMoriXovp6g-Oe4Sc5k6ycder5heFQ0ykeglOp778FxjzzMf8_FPmbeeuCFiOZuUWbZB"
